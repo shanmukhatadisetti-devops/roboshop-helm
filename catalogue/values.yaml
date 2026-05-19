@@ -1,0 +1,3 @@
+deployment:
+  imageName: shanmukhatadisetti/catalogue
+  imageVersion: v1
