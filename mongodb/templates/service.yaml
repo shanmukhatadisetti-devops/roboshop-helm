@@ -7,6 +7,10 @@ metadata:
     component: mongodb
     tier: db
 spec:
+  selector:
+    project: roboshop
+    component: mongodb
+    tier: db
   ports:
   - protocol: TCP
     port: 27017

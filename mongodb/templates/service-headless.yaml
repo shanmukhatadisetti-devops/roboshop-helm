@@ -2,13 +2,18 @@ apiVersion: v1
 kind: Service
 metadata:
   name: mongodb-headless
-  clusterIP: None
   labels:
     project: roboshop
     component: mongodb
     tier: db
 spec:
+  clusterIP: None
+  selector:
+    project: roboshop
+    component: mongodb
+    tier: db
   ports:
   - protocol: TCP
     port: 27017
     targetPort: 27017
+
